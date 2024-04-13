@@ -26,6 +26,31 @@ img {
     max-width: 1176px;
 }
 
+.row {
+    display: flex;
+    margin: 0 -0.5rem;
+    flex-wrap: wrap;
+}
+
+[class^="col-"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.badge-primary {
+    padding: 0.75rem 1.7rem;
+    background-color: var(--dc-comics-primary);
+    display: inline-block;
+    color: var(--dc-comics-light);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 /* region header */
 
 header {
@@ -123,3 +148,56 @@ header {
 }
 
 /* endregion header */
+
+/* region main */
+#section_main {
+    background-color: var(--dc-comics-main-dark);
+    padding-bottom: 1rem;
+
+    & .jumbotron {
+        min-height: 400px;
+        background-image: url('../images/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    & .title {
+        position: relative;
+        top: -1.5rem;
+    }
+
+    & .comics {
+
+        & .card {
+            margin-bottom: 1.5rem;
+
+            & .logo {
+                aspect-ratio: 1;
+                overflow: hidden;
+            }
+
+            & .name_comics {
+                color: var(--dc-comics-light);
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+            }
+        }
+
+    }
+
+    & .load-more {
+        text-align: center;
+
+        & button {
+            border: none;
+            font-size: 0.8rem;
+            padding: 0.5rem 2rem;
+        }
+    }
+
+}
+
+
+
+/* endregion main */
