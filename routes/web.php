@@ -36,3 +36,15 @@ Route::get('/comics/Action Comics', function () {
     /* dd($comics); */
     return view('action-comics', compact('comics'));
 })->name('action-comics');
+
+Route::get('/comics/American Vampire 1976', function () {
+    $comics = config('comics')[1];
+    /* dd($comics); */
+    return view('american-vampire', compact('comics'));
+})->name('american-vampire');
+
+Route::get('/comics/Aquaman', function () {
+    $comics = config('comics')[2];
+    /* dd($comics); */
+    return view('aquaman', compact('comics'));
+})->name('aquaman');
