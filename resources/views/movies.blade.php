@@ -2,36 +2,12 @@
 
 @section('content')
 <section class="section_main bg-dark">
+
     <section class="jumbotron">
 
     </section>
-    <div class="container">
-        <div class="title badge-primary">
-            Current Series
-        </div>
-        <div class="comics">
-            <div class="row">
-                @foreach ($comics as $comic )
-                <div class="col-2">
-                    <a href="/comics/{{$comic['series']}}">
-                       <div class="card">
-                            <div class="logo">
-                                <img src="{{$comic['thumb']}}" alt="" srcset="">
-                            </div>
-                            <div class="name_comics">
-                                {{$comic['series']}}
-                            </div>
-                        </div> 
-                    </a>
-                    
-                </div>
-                @endforeach
-
-            </div>
-        </div>
-    </div>
-    <section class="load-more ">
-        <button class="badge-primary">load more</button>
+    <section class="welcome">
+        <h3>movies</h3>
     </section>
     <section class="section-digitalcomics">
         <div class="container">
@@ -80,7 +56,7 @@
         </div>
     </section>
 </section>
+    
 
-
-
+    
 @endsection

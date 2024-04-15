@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="section_main">
+<section class="section_main bg-dark">
+
     <section class="jumbotron">
 
     </section>
