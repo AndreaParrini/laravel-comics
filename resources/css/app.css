@@ -108,13 +108,12 @@ header {
             & li {
                 list-style: none;
                 padding: 3rem 0;
-
+                border-bottom: 0.5rem solid transparent;
 
                 & a {
                     text-decoration: none;
                     text-transform: uppercase;
                     color: var(--dc-comics-main-dark);
-
 
                 }
 
@@ -232,6 +231,15 @@ header {
     }
 }
 
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dc-comics-primary);
+    min-height: 20vh;
+}
 
 /* endregion main */
 

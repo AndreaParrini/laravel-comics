@@ -5,9 +5,9 @@
     <section class="jumbotron">
 
     </section>
-   <section class="welcome">
-        <h3>Benvenuti nel sito dei tuoi fumetti preferiti</h3>
-   </section>
+    <section class="welcome">
+        <h3>characters</h3>
+    </section>
     <section class="section-digitalcomics">
         <div class="container">
             <div class="row">

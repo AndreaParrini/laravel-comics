@@ -11,9 +11,9 @@
        <nav>
             <img src="{{ Vite::asset('resources/images/dc-logo.png')}}" alt="Logo" srcset="">
             <ul>
-                <li><a  href="/">Characthers</a></li>
-                <li class="active"><a  href="/">Comics</a></li>
-                <li><a href="/">Movies</a></li>
+                <li class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}"><a  href="{{Route('characters')}}">Characters</a></li>
+                <li class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}"><a  href="{{Route('comics')}}">Comics</a></li>
+                <li ><a href="/">Movies</a></li>
                 <li><a href="/">TV</a></li>
                 <li><a href="/">Games</a></li>
                 <li><a href="/">Collectibles</a></li>

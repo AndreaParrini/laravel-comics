@@ -5,9 +5,31 @@
     <section class="jumbotron">
 
     </section>
-   <section class="welcome">
-        <h3>Benvenuti nel sito dei tuoi fumetti preferiti</h3>
-   </section>
+    <div class="container">
+        <div class="title badge-primary">
+            Current Series
+        </div>
+        <div class="comics">
+            <div class="row">
+                @foreach ($comics as $comic )
+                <div class="col-2">
+                    <div class="card">
+                        <div class="logo">
+                            <img src="{{$comic['thumb']}}" alt="" srcset="">
+                        </div>
+                        <div class="name_comics">
+                            {{$comic['series']}}
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+            </div>
+        </div>
+    </div>
+    <section class="load-more ">
+        <button class="badge-primary">load more</button>
+    </section>
     <section class="section-digitalcomics">
         <div class="container">
             <div class="row">
@@ -55,7 +77,7 @@
         </div>
     </section>
 </section>
-    
 
-    
+
+
 @endsection
