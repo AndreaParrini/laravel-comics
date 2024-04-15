@@ -244,6 +244,9 @@ header {
     }
 
     & .comics {
+        & a {
+            text-decoration: none;
+        }
 
         & .card {
             margin-bottom: 1.5rem;
