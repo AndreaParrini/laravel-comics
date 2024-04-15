@@ -26,3 +26,13 @@ Route::get('/comics', function () {
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
+
+Route::get('/movies', function () {
+    return view('movies');
+})->name('movies');
+
+Route::get('/comics/Action Comics', function () {
+    $comics = config('comics')[0];
+    /* dd($comics); */
+    return view('action-comics', compact('comics'));
+})->name('action-comics');
