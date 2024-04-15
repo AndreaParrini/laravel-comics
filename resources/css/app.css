@@ -278,6 +278,38 @@ footer {
         }
     }
 
+    & .section_follow {
+        padding: 1rem 0;
+        background-color: var(--dc-comics-footer-dark);
+
+        & .sign_and_follow {
+            display: flex;
+            justify-content: space-between;
+
+            & .btn {
+                border: 3px solid var(--dc-comics-primary);
+                color: var(--dc-comics-light);
+                background-color: transparent;
+                text-transform: uppercase;
+                padding: 1rem;
+                font-weight: 800;
+                font-size: 1rem;
+            }
+
+            & .follow-us {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                & span {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    color: var(--dc-comics-primary);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 
 }
 

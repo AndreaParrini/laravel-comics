@@ -66,4 +66,19 @@
             </section>
         </div>
     </section>
+    <section class="section_follow">
+        <div class="container">
+            <div class="sign_and_follow">
+                    <button class="btn">sign-up now!</button>
+                    <div class="follow-us">
+                        <span>Follow Us</span>
+                        <a href=""><img src="{{Vite::asset('resources/images/footer-facebook.png')}}" alt=""></a>
+                        <a href=""><img src="{{Vite::asset('resources/images/footer-periscope.png')}}" alt=""></a>
+                        <a href=""><img src="{{Vite::asset('resources/images/footer-pinterest.png')}}" alt=""></a>
+                        <a href=""><img src="{{Vite::asset('resources/images/footer-twitter.png')}}" alt=""></a>
+                        <a href=""><img src="{{Vite::asset('resources/images/footer-youtube.png')}}" alt=""></a>
+                    </div>  
+            </div>
+        </div>
+    </section>
 </footer>
