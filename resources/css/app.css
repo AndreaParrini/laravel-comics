@@ -45,6 +45,10 @@ img {
     width: calc((100% / 12) * 5);
 }
 
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
 .badge-primary {
     padding: 0.75rem 1.7rem;
     background-color: var(--dc-comics-primary);
@@ -230,3 +234,51 @@ header {
 
 
 /* endregion main */
+
+
+/* region footer */
+
+footer {
+
+
+    & .section_links {
+        background-image: url('../images/dc-logo-bg.png'), url('../images/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 500px, cover;
+        background-position: 75%, top;
+        padding: 1rem 0;
+
+        /* padding-top: 2rem; */
+        & ul {
+            & h4 {
+                text-transform: uppercase;
+                color: var(--dc-comics-light);
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 1rem 0;
+            }
+
+            & li {
+                list-style: none;
+                color: gray;
+                font-size: 0.9rem;
+                margin: 0.25rem 0;
+            }
+        }
+
+        & .cookies-settings {
+            margin: 1rem 0;
+            color: gray;
+            font-size: 0.9rem;
+
+            & a {
+                text-decoration: none;
+                color: var(--dc-comics-primary);
+            }
+        }
+    }
+
+
+}
+
+/* endregion footer */
